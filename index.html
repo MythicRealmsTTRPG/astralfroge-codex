@@ -69,6 +69,8 @@
       align-items:center;
       gap:18px;
       white-space:nowrap;
+      flex-wrap:wrap;
+      justify-content:flex-end;
     }
 
     .nav-links a{
@@ -83,6 +85,11 @@
     .nav-links a:hover{
       background:rgba(255,255,255,.06);
       color:#fff;
+    }
+
+    .nav-links a[aria-current="page"]{
+      background:rgba(255,255,255,.08);
+      color:rgba(255,255,255,.95);
     }
 
     /* HERO */
@@ -110,7 +117,6 @@
       pointer-events:none;
     }
 
-    /* Right-aligned hero text (bottom-right area) */
     .hero-text{
       position:absolute;
       right:6%;
@@ -329,17 +335,18 @@
     </div>
 
     <div class="nav-links">
-      <a href="https://astralforge.studio/games" target="_blank" rel="noopener">Games</a>
+      <a href="https://astralforge.studio/games/" target="_blank" rel="noopener noreferrer">Games</a>
+      <a href="https://play.astralforge.studio" target="_blank" rel="noopener noreferrer">Play</a>
       <a href="/" aria-current="page">Codex</a>
-      <a href="https://shop.astralforge.studio" target="_blank" rel="noopener">Shop</a>
-      <a href="https://astralforge.studio/about" target="_blank" rel="noopener">About</a>
-      <a href="https://astralforge.studio/join" target="_blank" rel="noopener">Join</a>
+      <a href="https://shop.astralforge.studio" target="_blank" rel="noopener noreferrer">Shop</a>
+      <a href="https://astralforge.studio/about/" target="_blank" rel="noopener noreferrer">About</a>
+      <a href="https://astralforge.studio/contact/" target="_blank" rel="noopener noreferrer">Contact</a>
+      <a href="https://astralforge.studio/membership/" target="_blank" rel="noopener noreferrer">Join</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
-    <!-- Replace this path with whatever hero image you actually have in the Codex repo -->
     <img class="hero-image" src="/assets/hero/Codex-hero.png" alt="Astral Forge Codex">
     <div class="hero-overlay"></div>
 
@@ -355,13 +362,11 @@
   <!-- CONTENT -->
   <main>
 
-    <!-- FEATURED + SIDEBAR -->
     <section class="section">
       <h2>Latest Entries</h2>
 
       <div class="grid">
 
-        <!-- Main column -->
         <div class="panel">
           <h3>Featured Entry</h3>
           <p class="muted">
@@ -382,7 +387,6 @@
           </div>
         </div>
 
-        <!-- Sidebar -->
         <aside class="panel">
           <h3>Browse</h3>
           <p class="muted">Quick paths for the archive. Create these pages when you’re ready.</p>
@@ -415,7 +419,6 @@
       </div>
     </section>
 
-    <!-- SECONDARY SECTION -->
     <section class="section">
       <h2>Archive Status</h2>
       <div class="panel">
@@ -429,9 +432,10 @@
     <footer class="footer">
       <div>© 2026 Astral Forge — Codex</div>
       <div>
-        <a href="https://astralforge.studio/legal/privacy" target="_blank" rel="noopener">Privacy</a>
-        <a href="https://astralforge.studio/legal/terms" target="_blank" rel="noopener">Terms</a>
-        <a href="https://rootapp.gg/AC05WwIOhgqvSevEYNE_4Q" target="_blank" rel="noopener">Root</a>
+        <a href="https://astralforge.studio/contact/" target="_blank" rel="noopener noreferrer">Contact</a>
+        <a href="https://astralforge.studio/legal/privacy/" target="_blank" rel="noopener noreferrer">Privacy</a>
+        <a href="https://astralforge.studio/legal/terms/" target="_blank" rel="noopener noreferrer">Terms</a>
+        <a href="https://rootapp.gg/AC05WwIOhgqvSevEYNE_4Q" target="_blank" rel="noopener noreferrer">Root</a>
       </div>
     </footer>
 
